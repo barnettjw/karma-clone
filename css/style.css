@@ -3,35 +3,42 @@
 /*body {
     background-color: LightGray;
 }*/
-div {
+/*div {
     border: 1px solid Chocolate;
+}*/
+
+/* reset */
+h1, h2, p, ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 /* nav */
 
 .top-nav {
-	height: 4em;
+	height: 3em;
 	background: #fff;
 }
 .top-nav .content {
-	width: 75%;
+	width: 58%;
 	margin: auto;
-}
-
-.top-nav .logo {
-	width: 1.25em;
-	margin: 1em;
-	background: url(css/karma-logo.svg) no-repeat;
 }
 
 .top-nav ul {
 	float: right;
-	margin-top: 1.5em;
+	margin-top: 0.5em;
 }
 
 .top-nav li {
 	display: inline-block;
-	padding-left: 1em;
+	padding-left: 1.5em;
 }
 
 .top-nav a {
@@ -42,12 +49,61 @@ div {
 	outline: none;
 }
 
+.top-nav .logo {
+	margin-top: 1em;
+	height: 2em;
+	width: 2em;
+	background: url("../images/karma-logo.svg") no-repeat;
+}
 
+/* hero */
+
+.hero {
+	background: url("../images/background.jpg") no-repeat center;
+	background-size: cover;
+    height: 40em;
+}
+
+
+.hero .content {
+	text-align: center;
+
+	/* center vertically */
+	position: relative;
+	top: 50%; 
+	transform: translateY(-50%);
+}
+
+h1 {
+	margin-bottom: 0.5em;
+}
+
+h2 {
+	margin-bottom: 1em;
+}
+
+.hero-button {
+	padding: 0.7em 1em;
+	background-color: #f15a29;
+    border-color: #f15a29;
+    border-radius: 4px;
+}
+
+.hero-button:hover {
+	background-color: #d9400e;
+    border-color: #cf3d0e;
+    cursor: pointer;
+}
+
+.hero-button:focus {
+	outline: none;
+}
 
 /* general typography */
 
 body {
 	font-family: Roboto, sans-serif;
+	-webkit-font-smoothing: antialiased;
 }
 
 /* nav typography */
@@ -60,8 +116,29 @@ body {
 	color: #333333;
 }
 
-.main-nav-link {
+.main-nav-link a {
 	font-weight: 500;
 	color: #4c5058;
 }
 
+/* hero typography */
+
+.hero .content {
+	color: white;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h1, h2 {
+	font-weight: 300;
+}
+
+.hero-button {
+	font-size: 1.25em;
+}
