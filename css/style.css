@@ -7,18 +7,15 @@ div {
     border: 1px solid Chocolate;
 }
 
-/* container */
-
-.container {
-	width: 75%;
-	margin: auto;
-}
-
 /* nav */
 
 .top-nav {
 	height: 4em;
 	background: #fff;
+}
+.top-nav .con {
+	width: 75%;
+	margin: auto;
 }
 
 .top-nav .logo {
