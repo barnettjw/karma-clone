@@ -22,9 +22,13 @@ html {
 
 /* general layout */
 
-.top-nav .content, .cases {
+.top-nav .content, .cases, .content-footer hr {
 	width: 58%;
 	margin: auto;
+}
+
+body {
+	margin-bottom: 10em;
 }
 
 /********** content **********/
@@ -72,7 +76,7 @@ html {
 .hero {
 	background: url("../images/background.jpg") no-repeat center;
 	background-size: cover;
-    height: 40em;
+    height: 45em;
 
 	/* fix for vertically center issue, added to parent */
     transform-style: preserve-3d;
@@ -122,13 +126,13 @@ h2 {
 	text-align: center;
 }
 
-figure {
+.cases figure {
     display: inline-block;
     /* fix for vertically center issue, added to parent */
     transform-style: preserve-3d;
 }
 
-figure img {
+.cases img {
 	/* begin - center img horizontally in figure */
     position: relative;
     left: 50%; 
@@ -137,11 +141,36 @@ figure img {
     width: 6em;
 }
 
-figure figcaption {
+.cases figcaption {
 	margin-top: 2em;
 }
 
+/* footer */
+.content-footer hr {
+	margin: 5em auto 1em auto;
+}
 
+.content-footer {
+	text-align: center;
+}
+
+.content-footer ul {
+	margin: 1em auto 1em auto;
+}
+
+.content-footer li {
+	display: inline-block;
+	width: 2.5em;
+	height: 2.5em;
+	border: 1px solid #eaebec;
+	border-radius: 50%;
+	/* 1/4 the height */
+	padding-top: 0.625em;
+	margin-left: 1em;
+	text-align: center;
+}
+
+	
 
 /********** typography **********/
 
@@ -152,14 +181,18 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-/* nav typography */
-
-.top-nav a {
+.top-nav a, .copyright {
 	color: #838994;
 }
 
+h1, h2, .cases h2, .copyright {
+	font-weight: 300;
+}
+
+/* nav typography */
+
 .top-nav a:hover {
-	color: #333333;
+	color: #333;
 }
 
 .main-nav-link a {
@@ -181,10 +214,6 @@ h2 {
 	font-size: 1.5em;
 }
 
-h1, h2 {
-	font-weight: 300;
-}
-
 .hero-button {
 	font-size: 1.25em;
 }
@@ -193,9 +222,27 @@ h1, h2 {
 
 .cases h2 {
 	font-size: 2.75em;
-	font-weight: 300;
 }
 
 .cases figcaption {
 	font-size: 1.5em;
 }
+
+/* typography footer */
+.content-footer hr {
+	border: 0;
+    border-top: 1px solid #eaebec;
+}
+
+.twitter {
+	color: #55acee;
+}
+
+.facebook {
+	color: #4c66a4
+}
+
+.instagram {
+	color: #3f729b;
+}
+
