@@ -73,11 +73,15 @@ html {
 	background: url("../images/background.jpg") no-repeat center;
 	background-size: cover;
     height: 40em;
+
+	/* fix for vertically center issue, added to parent */
+    transform-style: preserve-3d;
 }
 
 
 .hero .content {
-	/* being - center vertically */
+	/* being - center vertically 
+	details: http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/; */
 	position: relative;
 	top: 50%; 
 	transform: translateY(-50%);
@@ -120,6 +124,8 @@ h2 {
 
 figure {
     display: inline-block;
+    /* fix for vertically center issue, added to parent */
+    transform-style: preserve-3d;
 }
 
 figure img {
