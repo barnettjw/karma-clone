@@ -20,15 +20,26 @@ html {
   box-sizing: inherit;
 }
 
+/* general layout */
+
+.top-nav .content, .cases {
+	width: 58%;
+	margin: auto;
+}
+
+/********** content **********/
+
 /* nav */
 
 .top-nav {
-	height: 3em;
-	background: #fff;
-}
-.top-nav .content {
-	width: 58%;
-	margin: auto;
+	/* begin - sticky nav */
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+	/* end */
+
+	height: 4.5em;
+	background: white;
 }
 
 .top-nav ul {
@@ -66,12 +77,13 @@ html {
 
 
 .hero .content {
-	text-align: center;
-
-	/* center vertically */
+	/* being - center vertically */
 	position: relative;
 	top: 50%; 
 	transform: translateY(-50%);
+	/* end */
+
+	text-align: center;
 }
 
 h1 {
@@ -98,6 +110,34 @@ h2 {
 .hero-button:focus {
 	outline: none;
 }
+
+/* cases */
+
+.cases h2 {
+	margin: 2em 0 1em 0;
+	text-align: center;
+}
+
+figure {
+    display: inline-block;
+}
+
+figure img {
+	/* begin - center img horizontally in figure */
+    position: relative;
+    left: 50%; 
+    transform: translateX(-50%);
+	/* end */
+    width: 6em;
+}
+
+figure figcaption {
+	margin-top: 2em;
+}
+
+
+
+/********** typography **********/
 
 /* general typography */
 
@@ -141,4 +181,15 @@ h1, h2 {
 
 .hero-button {
 	font-size: 1.25em;
+}
+
+/* cases typography */
+
+.cases h2 {
+	font-size: 2.75em;
+	font-weight: 300;
+}
+
+.cases figcaption {
+	font-size: 1.5em;
 }
