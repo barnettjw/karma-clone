@@ -162,7 +162,7 @@ h2 {
 	display: inline-block;
 	width: 2.5em;
 	height: 2.5em;
-	border: 1px solid #eaebec;
+	border: 1px solid LightGray;
 	border-radius: 50%;
 	/* 1/4 the height */
 	padding-top: 0.625em;
